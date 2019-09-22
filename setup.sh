@@ -33,8 +33,8 @@ then
     cp /etc/i3/config /etc/i3/config.bak
     cp configs/i3.conf /etc/i3/config
 
-    cp /etc/xgb/tint2/tint2rc /etc/xgb/tint2/tintrc.bak
-    cp configs/tint2.conf /etc/xgb/tint2/tint2rc
+    cp /etc/xdg/tint2/tint2rc /etc/xdg/tint2/tintrc.bak
+    cp configs/tint2.conf /etc/xdg/tint2/tint2rc
 
 fi
 
@@ -50,4 +50,11 @@ then
 
     cp configs/tint2.conf $HOME/.config/tint2/.
 
+fi
+
+if [ ! $GLOBAL ] && [ ! $LOCAL ]
+then
+    echo "No config files setup on machine";
+    echo "Please use -l --local to setup in $HOME/.config";
+    echo "Or use -g --global to setup configuration globally";
 fi
