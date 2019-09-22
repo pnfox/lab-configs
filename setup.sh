@@ -36,6 +36,8 @@ then
     cp /etc/xdg/tint2/tint2rc /etc/xdg/tint2/tintrc.bak
     cp configs/tint2.conf /etc/xdg/tint2/tint2rc
 
+    cp background/default.png /usr/share/backgrounds/default.png
+
 fi
 
 if [ $LOCAL ]
@@ -49,6 +51,8 @@ then
     cp configs/i3.conf $HOME/.config/i3/config
 
     cp configs/tint2.conf $HOME/.config/tint2/.
+
+    cp background/default.png /usr/share/backgrounds/default.png
 
 fi
 
