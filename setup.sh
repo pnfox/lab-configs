@@ -39,6 +39,10 @@ then
     cp /usr/share/dunst/dunstrc /usr/share/dunst/dunstrc.bak
     cp configs/dunstrc /usr/share/dunst/dunstrc
 
+    mkdir /etc/xdg/jgmenu
+    cp configs/jgmenurc /etc/xdg/jgmenu/jgmenurc
+    cp configs/menu.csv /etc/xdg/jgmenu/menu.csv
+
     cp background/default.png /usr/share/backgrounds/default.png
 
 fi
@@ -57,6 +61,10 @@ then
 
     mkdir $HOME/.config/dunst
     cp configs/dunstrc $HOME/.config/dunst/.
+
+    mkdir $HOME/.config/jgmenu
+    cp configs/jgmenurc $HOME/.config/jgmenu/jgmenurc
+    cp configs/menu.csv $HOME/.config/jgmenu/menu.csv
 
     cp background/default.png /usr/share/backgrounds/default.png
 
