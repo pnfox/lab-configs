@@ -43,6 +43,9 @@ then
     cp configs/jgmenurc /etc/xdg/jgmenu/jgmenurc
     cp configs/menu.csv /etc/xdg/jgmenu/menu.csv
 
+    cp /etc/conky/conky.conf /etc/conky/conky.conf.bak
+    cp configs/conkyrc /etc/conky/conky.conf
+
     cp background/default.png /usr/share/backgrounds/default.png
 
 fi
@@ -63,8 +66,11 @@ then
     cp configs/dunstrc $HOME/.config/dunst/.
 
     mkdir $HOME/.config/jgmenu
-    cp configs/jgmenurc $HOME/.config/jgmenu/jgmenurc
-    cp configs/menu.csv $HOME/.config/jgmenu/menu.csv
+    cp configs/jgmenurc $HOME/.config/jgmenu/.
+    cp configs/menu.csv $HOME/.config/jgmenu/.
+
+    mkdir $HOME/.config/conky
+    cp configs/conkyrc $HOME/.config/conky/.
 
     cp background/default.png /usr/share/backgrounds/default.png
 
