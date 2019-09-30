@@ -14,9 +14,9 @@ jgmenu demo,^tag(root)
 directory,^checkout(submenu),folder-documents
 browser,firefox,web-browser
 file manager,ranger,system-file-manager
-terminal,xterm,utilities-terminal
+terminal,urxvt,utilities-terminal
 emacs,emacs,emacs
-gparted,gparted,gparted
+parted,urxvt -e sh -c "sudo parted",gparted
 
 submenu,^tag(submenu)
 Image Viewer,viewnior ,viewnior
