@@ -16,7 +16,7 @@ browser,firefox,web-browser
 file manager,ranger,system-file-manager
 terminal,urxvt,utilities-terminal
 emacs,emacs,emacs
-parted,urxvt -e sh -c "sudo parted",gparted
+parted,urxvt -title "GNU parted" -e sh -c "sudo parted",gparted
 
 submenu,^tag(submenu)
 Image Viewer,viewnior ,viewnior
