@@ -46,6 +46,8 @@ then
     cp /etc/conky/conky.conf /etc/conky/conky.conf.bak
     cp configs/conkyrc /etc/conky/conky.conf
 
+    cp configs/launchy.png /usr/share/icons/.
+
     cp background/default.png /usr/share/backgrounds/default.png
 
 fi
@@ -71,6 +73,9 @@ then
 
     mkdir $HOME/.config/conky
     cp configs/conkyrc $HOME/.config/conky/.
+
+    mkdir $HOME/.config/icons/
+    cp configs/launchy.png $HOME/.config/icons/.
 
     cp background/default.png /usr/share/backgrounds/default.png
 
