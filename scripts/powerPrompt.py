@@ -59,5 +59,6 @@ class ButtonWindow(Gtk.Window):
 
 win = ButtonWindow()
 win.connect("destroy", Gtk.main_quit)
+win.fullscreen()
 win.show_all()
 Gtk.main()
