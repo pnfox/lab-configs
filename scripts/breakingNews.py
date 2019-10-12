@@ -4,7 +4,7 @@ SITES = ['guardian.com', 'economist.com', 'cnn.com', 'reuters.com']
 TAGS = []
 
 def printNews(post):
-    print('\033[95m' + post.url.split('/')[2] + "\033[0m: " + post.title)
+    print(post.url.split('/')[2] + ": " + post.title)
 
 newsPosts = hn.get_post('new_posts', 30)
 for post in newsPosts:
