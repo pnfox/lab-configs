@@ -9,19 +9,30 @@ class ButtonWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="Power Menu")
 
-        hbox = Gtk.Box(spacing=6)
+        self.fullscreen()
+
+        hbox = Gtk.ButtonBox()
         self.add(hbox)
 
+        hbox.padding = 200
+
         powerIcon = Gtk.Image()
+        powerButton = Gtk.Button()
         powerIcon.set_from_file("./powerOff.png")
-        hbox.pack_start(powerIcon, True, True, 0)
+        #powerButton.set_size_request(250, 250)
+        hbox.pack_start(powerButton, True, True, 0)
+        powerButton.set_image(powerIcon)
 
         rebootIcon = Gtk.Image()
+        rebootButton = Gtk.Button()
+        #rebootButton.set_size_request(250,250)
         rebootIcon.set_from_file("./reboot.png")
-        hbox.pack_start(rebootIcon, True, True, 0)
+        hbox.pack_start(rebootButton, True, True, 0)
+        rebootButton.set_image(rebootIcon)
 
         suspendIcon = Gtk.Image()
         suspendButton = Gtk.Button()
+        #suspendButton.set_size_request(250, 250)
         suspendIcon.set_from_file("./suspend.png")
         hbox.pack_start(suspendButton, True, True, 0)
         suspendButton.set_image(suspendIcon)
@@ -38,6 +49,5 @@ class ButtonWindow(Gtk.Window):
 
 win = ButtonWindow()
 win.connect("destroy", Gtk.main_quit)
-win.fullscreen()
 win.show_all()
 Gtk.main()
