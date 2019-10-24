@@ -48,6 +48,10 @@ then
 
     cp configs/launchy.png /usr/share/icons/.
 
+    cp background/powerOff.png /usr/share/icons/.
+    cp background/reboot.png /usr/share/icons/.
+    cp background/suspend.png /usr/share/icons/.
+
     cp background/default.png /usr/share/backgrounds/default.png
 
 fi
@@ -76,6 +80,10 @@ then
 
     mkdir $HOME/.config/icons/
     cp configs/launchy.png $HOME/.config/icons/.
+
+    cp background/powerOff.png /usr/share/icons/.
+    cp background/reboot.png /usr/share/icons/.
+    cp background/suspend.png /usr/share/icons/.
 
     cp background/default.png /usr/share/backgrounds/default.png
 
