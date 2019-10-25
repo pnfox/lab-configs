@@ -123,6 +123,7 @@ lxappearance
 lightdm-settings
 adwaita-gtk2-theme
 adwaita-icon-theme
+conky
 compton
 tint2
 dunst
