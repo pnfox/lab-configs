@@ -39,10 +39,6 @@ then
     cp /usr/share/dunst/dunstrc /usr/share/dunst/dunstrc.bak
     cp configs/dunstrc /usr/share/dunst/dunstrc
 
-    mkdir /etc/xdg/jgmenu
-    cp configs/jgmenurc /etc/xdg/jgmenu/jgmenurc
-    cp configs/menu.csv /etc/xdg/jgmenu/menu.csv
-
     cp /etc/conky/conky.conf /etc/conky/conky.conf.bak
     cp configs/conkyrc /etc/conky/conky.conf
 
@@ -106,6 +102,10 @@ if [ -f /etc/redhat-release ]; then
     echo "Building jgmenu";
     sudo make;
     sudo make install;
+    echo "Configure jgmenu";
+    mkdir /etc/xdg/jgmenu
+    cp configs/jgmenurc /etc/xdg/jgmenu/jgmenurc
+    cp configs/menu.csv /etc/xdg/jgmenu/menu.csv
 else
     echo "Not fedora based distro, will not install jgmenu"
 fi
