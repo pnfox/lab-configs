@@ -96,7 +96,10 @@ then
     echo "Or use -g --global to setup configuration globally";
 fi
 
+
 cd /tmp
+git clone https://github.com/johanmalm/jgmenu.git
+cd jgmenu
 if [ -f /etc/redhat-release ]; then
     echo "Installing fedora dependencies for jgmenu"
     sudo dnf install -y -q libX11-devel libXrandr-devel libxml2-devel pango-devel cairo-devel librsvg2 librsvg2-devel menu-cache menu-cache-devel glibc-headers glib2-devel
