@@ -112,6 +112,7 @@ tar
 
 # applications
 rxvt-unicode
+sakura
 firefox
 vi
 git
