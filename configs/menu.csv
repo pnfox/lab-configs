@@ -14,7 +14,7 @@ jgmenu demo,^tag(root)
 directory,^checkout(submenu),folder-documents
 browser,firefox,web-browser
 file manager,urxvt -title "Ranger" -e sh -c "ranger",system-file-manager
-terminal,urxvt,utilities-terminal
+terminal,sakura,utilities-terminal
 emacs,emacs,emacs
 parted,urxvt -title "GNU parted" -e sh -c "sudo parted",gparted
 
