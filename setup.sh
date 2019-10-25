@@ -95,3 +95,15 @@ then
     echo "Please use -l --local to setup in $HOME/.config";
     echo "Or use -g --global to setup configuration globally";
 fi
+
+cd /tmp
+if [ -f /etc/redhat-release ]; then
+    echo "Installing fedora dependencies for jgmenu"
+    sudo dnf install -y -q libX11-devel libXrandr-devel libxml2-devel pango-devel cairo-devel librsvg2 librsvg2-devel menu-cache menu-cache-devel glibc-headers glib2-devel
+    echo "Building jgmenu";
+    sudo make;
+    sudo make install;
+else
+    echo "Not fedora based distro, will not install jgmenu"
+fi
+
