@@ -1,5 +1,7 @@
 #!/bin/bash
 
+scriptDir=$PWD
+
 POSITIONAL=()
 while [[ $# -gt 0 ]]
 do
@@ -100,10 +102,12 @@ if [ -f /etc/redhat-release ]; then
     echo "Installing fedora dependencies for jgmenu"
     sudo dnf install -y -q libX11-devel libXrandr-devel libxml2-devel pango-devel cairo-devel librsvg2 librsvg2-devel menu-cache menu-cache-devel glibc-headers glib2-devel make gcc gcc-c++
     echo "Building jgmenu";
+    ./configure
     sudo make;
     sudo make install;
     echo "Configure jgmenu";
-    mkdir /etc/xdg/jgmenu
+    mkdir -p /etc/xdg/jgmenu
+    cd $scriptDir
     cp configs/jgmenurc /etc/xdg/jgmenu/jgmenurc
     cp configs/menu.csv /etc/xdg/jgmenu/menu.csv
 else
