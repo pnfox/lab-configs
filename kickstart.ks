@@ -86,7 +86,6 @@ done
 %end
 
 %packages --timeout=120 --retries=20
-@base-x
 @system-tools
 @core
 @Standard
@@ -96,6 +95,9 @@ kernel
 # Make sure that DNF doesn't pull in debug kernel to satisfy kmod() requires
 kernel-modules
 kernel-modules-extra
+
+sway
+gdm
 
 memtest86+
 grub2-efi
@@ -113,14 +115,12 @@ tar
 # applications
 rxvt-unicode
 sakura
-firefox
+firefox-wayland
 vi
 git
 htop
 screenfetch
 nitrogen
-lxappearance
-lightdm-settings
 adwaita-gtk2-theme
 adwaita-icon-theme
 conky
@@ -128,6 +128,8 @@ compton
 tint2
 dunst
 
+-gnome-*
+-i3wm
 -openbox
 -awesome
 -ratpoison
