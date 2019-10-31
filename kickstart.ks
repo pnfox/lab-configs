@@ -67,7 +67,7 @@ theme-name=Adwaita-dark
 icon-theme-name=Adwaita
 background=/usr/share/backgrounds/default.png" > /etc/lightdm/slick-greeter.conf
 
-git clone --single-branch --branch feature/jgmenu https://github.com/pnfox/lab-configs.git /tmp/custom-configs
+git clone https://github.com/pnfox/lab-configs.git /tmp/custom-configs
 cd /tmp/custom-configs
 ./setup.sh --global
 
