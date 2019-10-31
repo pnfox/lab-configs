@@ -89,6 +89,8 @@ done
 @base-x
 @system-tools
 @core
+authconfig
+system-config-firewall-base
 @Standard
 @Fonts
 @hardware-support
