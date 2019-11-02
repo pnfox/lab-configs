@@ -114,3 +114,5 @@ else
     echo "Not fedora based distro, will not install jgmenu"
 fi
 
+cd $scriptDir
+
