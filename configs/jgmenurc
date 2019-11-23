@@ -48,7 +48,7 @@ icon_theme_fallback = Adwaita
 #arrow_string        = >
 #arrow_width         = 15
 
-color_menu_bg	    = #eeeeee 100
+color_menu_bg	    = #3a6496 100
 #color_menu_border   = #eeeeee 8
 
 color_norm_bg	    = #000000 0
