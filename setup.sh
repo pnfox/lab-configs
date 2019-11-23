@@ -37,6 +37,7 @@ then
 
     cp /etc/xdg/tint2/tint2rc /etc/xdg/tint2/tintrc.bak
     cp configs/tint2.conf /etc/xdg/tint2/tint2rc
+    cp assets/launch.png /usr/share/tint2/.
 
     cp /usr/share/dunst/dunstrc /usr/share/dunst/dunstrc.bak
     cp configs/dunstrc /usr/share/dunst/dunstrc
@@ -65,6 +66,7 @@ then
     cp configs/i3.conf $HOME/.config/i3/config
 
     cp configs/tint2.conf $HOME/.config/tint2/.
+    cp assets/launch.png /usr/share/tint2/.
 
     mkdir $HOME/.config/dunst
     cp configs/dunstrc $HOME/.config/dunst/.
@@ -75,9 +77,6 @@ then
 
     mkdir $HOME/.config/conky
     cp configs/conkyrc $HOME/.config/conky/.
-
-    mkdir $HOME/.config/icons/
-    cp configs/launchy.png $HOME/.config/icons/.
 
     cp assets/powerOff.png /usr/share/icons/.
     cp assets/reboot.png /usr/share/icons/.
