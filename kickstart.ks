@@ -125,6 +125,7 @@ lxappearance
 lightdm-settings
 adwaita-gtk2-theme
 adwaita-icon-theme
+papirus-icon-theme
 conky
 compton
 tint2

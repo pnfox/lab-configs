@@ -40,15 +40,15 @@ menu_valign         = top
 
 #font                =
 #font_fallback       = xtg
-#icon_size           = 22
-#icon_text_spacing   = 10
-#icon_theme          =
-#icon_theme_fallback = xtg
+icon_size           = 32
+icon_text_spacing   = 10
+icon_theme          = Papirus
+icon_theme_fallback = Adwaita
 
 #arrow_string        = >
 #arrow_width         = 15
 
-color_menu_bg	    = #eeeeee 100
+color_menu_bg	    = #3a6496 100
 #color_menu_border   = #eeeeee 8
 
 color_norm_bg	    = #000000 0
