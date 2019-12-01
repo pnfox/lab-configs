@@ -104,6 +104,7 @@ tar
 
 # applications
 rxvt-unicode
+rxvt-unicode-256color
 sakura
 firefox
 vi
