@@ -93,25 +93,24 @@ then
     echo "Or use -g --global to setup configuration globally";
 fi
 
-
-cd /tmp
-git clone https://github.com/johanmalm/jgmenu.git
-cd jgmenu
-if [ -f /etc/redhat-release ]; then
-    echo "Installing fedora dependencies for jgmenu"
-    sudo dnf install -y -q libX11-devel libXrandr-devel libxml2-devel pango-devel cairo-devel librsvg2 librsvg2-devel menu-cache menu-cache-devel glibc-headers glib2-devel make gcc gcc-c++
-    echo "Building jgmenu";
-    ./configure
-    sudo make;
-    sudo make install;
-    echo "Configure jgmenu";
-    mkdir -p /etc/xdg/jgmenu
+if ! command -v jgmenu; then
+    cd /tmp
+    git clone https://github.com/johanmalm/jgmenu.git
+    cd jgmenu
+    if [ -f /etc/redhat-release ]; then
+        echo "Installing fedora dependencies for jgmenu"
+        sudo dnf install -y -q libX11-devel libXrandr-devel libxml2-devel pango-devel cairo-devel librsvg2 librsvg2-devel menu-cache menu-cache-devel glibc-headers glib2-devel make gcc gcc-c++
+        echo "Building jgmenu";
+        ./configure
+        sudo make;
+        sudo make install;
+        echo "Configure jgmenu";
+        mkdir -p /etc/xdg/jgmenu
+        cd $scriptDir
+        cp configs/jgmenurc /etc/xdg/jgmenu/jgmenurc
+        cp configs/menu.csv /etc/xdg/jgmenu/menu.csv
+    else
+        echo "Not fedora based distro, will not install jgmenu"
+    fi
     cd $scriptDir
-    cp configs/jgmenurc /etc/xdg/jgmenu/jgmenurc
-    cp configs/menu.csv /etc/xdg/jgmenu/menu.csv
-else
-    echo "Not fedora based distro, will not install jgmenu"
 fi
-
-cd $scriptDir
-
