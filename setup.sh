@@ -114,3 +114,8 @@ if ! command -v jgmenu; then
     fi
     cd $scriptDir
 fi
+
+cd $scriptDir
+echo "Installing Papirus Icon Theme"
+wget -qO- https://git.io/papirus-icon-theme-install | sh
+

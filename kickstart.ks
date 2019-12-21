@@ -67,21 +67,11 @@ theme-name=Adwaita-dark
 icon-theme-name=Adwaita
 background=/usr/share/backgrounds/default.png" > /etc/lightdm/slick-greeter.conf
 
+pip3 install pywal
+
 git clone https://github.com/pnfox/lab-configs.git /tmp/custom-configs
 cd /tmp/custom-configs
 ./setup.sh --global
-
-for d in $(ls -d /home/*); do
-if [ $d = "/home/lost+found" ]
-then
-    continue
-fi
-echo "[xin_-1]
-file=/usr/share/backgrounds/default.png
-mode=0
-bgcolor=#000000" > $d/.config/nitrogen/bg-saved.png
-done
-
 
 %end
 
@@ -114,13 +104,13 @@ tar
 
 # applications
 rxvt-unicode
+rxvt-unicode-256color
 sakura
 firefox
 vi
 git
 htop
 screenfetch
-nitrogen
 lxappearance
 lightdm-settings
 adwaita-gtk2-theme
