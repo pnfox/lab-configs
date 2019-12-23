@@ -35,6 +35,10 @@ then
     cp /etc/i3/config /etc/i3/config.bak
     cp configs/i3.conf /etc/i3/config
 
+    cp scripts/battery.sh /etc/.
+    chmod +x /etc/battery.sh
+    echo "alias battery='sh /etc/battery.sh'"
+
     cp /etc/xdg/tint2/tint2rc /etc/xdg/tint2/tintrc.bak
     cp configs/tint2.conf /etc/xdg/tint2/tint2rc
     cp assets/launch.png /usr/share/tint2/.
