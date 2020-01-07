@@ -5,13 +5,13 @@
 #
 
 @rect,,10,10,180,25,3,left,top,#666666 15,#000000 0,content
-@search,,10,10,180,25,3,left,top,#666666 90,#222222 3,Type to search...
+@search,,10,10,180,25,3,left,top,#000000 100,#222222 3,Type to search...
 
 jgmenu demo,^tag(root)
 directory,^checkout(submenu),folder-documents
 browser,firefox,web-browser
 file manager,urxvt -title "Ranger" -e sh -c "ranger",system-file-manager
-terminal,sakura,utilities-terminal
+terminal,urxvt -title "Terminal" -e sh -c "i3-msg -q floating enable; i3-msg -q move position mouse; bash",utilities-terminal
 emacs,emacs,emacs
 parted,urxvt -title "GNU parted" -e sh -c "sudo parted",gparted
 
