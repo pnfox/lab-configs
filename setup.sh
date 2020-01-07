@@ -37,7 +37,11 @@ then
 
     cp scripts/battery.sh /etc/.
     chmod +x /etc/battery.sh
-    echo "alias battery='sh /etc/battery.sh'"
+    echo "alias battery='sh /etc/battery.sh'" >> /etc/bashrc
+
+    cp scripts/planner.py /etc/.
+    chmod +x /etc/planner.py
+    echo "alias planner='python /etc/planner.py'" >> /etc/bashrc
 
     cp /etc/xdg/tint2/tint2rc /etc/xdg/tint2/tintrc.bak
     cp configs/tint2.conf /etc/xdg/tint2/tint2rc
