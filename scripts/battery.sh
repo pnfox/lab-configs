@@ -35,7 +35,7 @@ else
         echo $(bc <<< "scale=2;$chargenow / $chargefull * 100") "%";
     fi
     if [ $chargenow -gt $(bc <<< "$chargefull * 61 / 100") ]; then
-        echo /usr/share/icons/Papirus/16x16/panel/battery-060.svg " " $(bc <<< "scale=2;$chargenow / $chargefull * 100") "%";
+        echo $(bc <<< "scale=2;$chargenow / $chargefull * 100") "%";
     fi
 fi
 
