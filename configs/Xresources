@@ -1,15 +1,54 @@
 XTerm.vt100.locale: true
 XTerm.vt100.saveLines: 4096
-XTerm.vt100.geometry: 80x32
 XTerm*selectToClipboard: true
+XTerm*faceName:  Console:size=12
+XTerm*font: 7x13
+XTerm*renderFont: false
+XTerm*scrollBar: false
+
 rxvt.saveLines: 3000
 rxvt*scrollBar: false
-URxvt.font: 9x15
+
+URxvt.font: 7x13
+URxvt.faceName: size=12
+URxvt.internalBorder: 10
 URxvt.scrollBar: false
-URxvt.transparent: true
-URxvt.shading:30
-XTerm*faceName:  DejaVu Sans Mono:size=8
+URxvt.shading: 20
+
 ! special
-*.foreground:   #a8a19f
-*.background:   #1b1918
-*.cursorColor:  #a8a19f
+*.foreground:   #d0d0d0
+*.background:   #151515
+*.cursorColor:  #d0d0d0
+
+! black
+*.color0:       #151515
+*.color8:       #505050
+
+! red
+*.color1:       #ac4142
+*.color9:       #ac4142
+
+! green
+*.color2:       #90a959
+*.color10:      #90a959
+
+! yellow
+*.color3:       #f4bf75
+*.color11:      #f4bf75
+
+! blue
+*.color4:       #6a9fb5
+*.color12:      #6a9fb5
+
+! magenta
+*.color5:       #aa759f
+*.color13:      #aa759f
+
+! cyan
+*.color6:       #75b5aa
+*.color14:      #75b5aa
+
+! white
+*.color7:       #d0d0d0
+*.color15:      #f5f5f5
+
