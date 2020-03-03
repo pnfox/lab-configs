@@ -6,17 +6,17 @@ at_pointer          = 1
 #terminal_exec       = x-terminal-emulator
 #terminal_args       = -e
 #monitor             = 0
-#hover_delay	     = 100
+hover_delay	     = 100
 #hide_back_items     = 1
 
-#menu_margin_x       = 0
-#menu_margin_y       = 0
+#menu_margin_x       = 50
+menu_margin_y       = -50
 #menu_width          = 200
-menu_padding_top    = 90
+menu_padding_top    = 40
 #menu_padding_right  = 5
-#menu_padding_bottom = 5
+#menu_padding_bottom = 20
 #menu_padding_left   = 5
-#menu_radius         = 1
+menu_radius         = 4
 #menu_border         = 0
 #menu_halign         = left
 menu_valign         = top
@@ -28,10 +28,11 @@ menu_valign         = top
 #sub_padding_left    = auto
 #sub_hover_action    = 1
 
-#item_margin_x       = 3
-#item_margin_y       = 3
+item_margin_x       = 5
+item_margin_y       = 5
 #item_height         = 25
-#item_padding_x      = 4
+item_padding_x      = 4
+item_padding_y      = 4
 #item_radius         = 1
 #item_border         = 0
 #item_halign         = left
@@ -48,13 +49,13 @@ icon_theme_fallback = Adwaita
 #arrow_string        = >
 #arrow_width         = 15
 
-color_menu_bg	    = #2763ae 100
+color_menu_bg	    = #2f343f 100
 #color_menu_border   = #eeeeee 8
 
-color_norm_bg	    = #000000 0
-color_norm_fg	    = #111111 100
+color_norm_bg	    = #eeeeee 0
+color_norm_fg	    = #eeeeee 100
 
-color_sel_bg	    = #23599c 100
+color_sel_bg	    = #40e4d0 71
 color_sel_fg	    = #eeeeee 100
 #color_sel_border    = #eeeeee 8
 
