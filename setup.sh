@@ -67,8 +67,11 @@ if [ $LOCAL ]
 then
     echo "Copying config files locally, to $HOME/.config";
 
-    cp configs/Xresources $HOME/.
-    xrdb $HOME/Xresources
+    cp configs/Xresources $HOME/.Xresources
+    xrdb $HOME/.Xresources
+
+    cp configs/bashrc $HOME/.bashrc
+    cp configs/prompt $HOME/.prompt
 
     cp $HOME/.config/i3/config $HOME/.config/i3/config.bak
     cp configs/i3.conf $HOME/.config/i3/config

@@ -1,0 +1,28 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# If not running interactively, don´t do anything
+[ -z "$PS1" ] && return
+
+# User specific environment
+PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+export PATH
+
+force_color_prompt=yes
+
+source .prompt
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+alias battery="sh /home/pnfox/battery.sh"
+alias uni="cd /home/pnfox/Documents/University/level3"
+
+
+echo "Hello again."
+echo "What should we do today?"
