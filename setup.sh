@@ -61,6 +61,9 @@ then
 
     cp assets/default.png /usr/share/backgrounds/default.png
 
+    mkdir /etc/colors
+    cp assets/colors/* /etc/colors
+
 fi
 
 if [ $LOCAL ]
@@ -130,3 +133,8 @@ cd $scriptDir
 echo "Installing Papirus Icon Theme"
 wget -qO- https://git.io/papirus-icon-theme-install | sh
 
+cd $scriptDir
+git clone https://github.com/dylanaraps/paleta
+cd paleta
+sudo make install
+cd $scriptDir
